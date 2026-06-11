@@ -96,6 +96,8 @@ export const OPENCODE_PROVIDER_ICON: ProviderIconSvg = {
   ],
 };
 
+export const MIMOCODE_PROVIDER_ICON: ProviderIconSvg = OPENCODE_PROVIDER_ICON;
+
 export const PI_PROVIDER_ICON: ProviderIconSvg = {
   kind: 'composite',
   viewBox: '0 0 800 800',

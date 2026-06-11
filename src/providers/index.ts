@@ -4,6 +4,8 @@ import { claudeWorkspaceRegistration } from './claude/app/ClaudeWorkspaceService
 import { claudeProviderRegistration } from './claude/registration';
 import { codexWorkspaceRegistration } from './codex/app/CodexWorkspaceServices';
 import { codexProviderRegistration } from './codex/registration';
+import { mimocodeWorkspaceRegistration } from './mimocode/app/MimocodeWorkspaceServices';
+import { mimocodeProviderRegistration } from './mimocode/registration';
 import { opencodeWorkspaceRegistration } from './opencode/app/OpencodeWorkspaceServices';
 import { opencodeProviderRegistration } from './opencode/registration';
 import { piWorkspaceRegistration } from './pi/app/PiWorkspaceServices';
@@ -18,10 +20,12 @@ export function registerBuiltInProviders(): void {
 
   ProviderRegistry.register('claude', claudeProviderRegistration);
   ProviderRegistry.register('codex', codexProviderRegistration);
+  ProviderRegistry.register('mimocode', mimocodeProviderRegistration);
   ProviderRegistry.register('opencode', opencodeProviderRegistration);
   ProviderRegistry.register('pi', piProviderRegistration);
   ProviderWorkspaceRegistry.register('claude', claudeWorkspaceRegistration);
   ProviderWorkspaceRegistry.register('codex', codexWorkspaceRegistration);
+  ProviderWorkspaceRegistry.register('mimocode', mimocodeWorkspaceRegistration);
   ProviderWorkspaceRegistry.register('opencode', opencodeWorkspaceRegistration);
   ProviderWorkspaceRegistry.register('pi', piWorkspaceRegistration);
   builtInProvidersRegistered = true;
