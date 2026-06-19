@@ -81,3 +81,13 @@ Tests mirror the `src/` layout under `tests/unit/` and `tests/integration/`.
 - Run `npm run typecheck && npm run lint && npm run test && npm run build` after editing.
 - No `console.*` in production code.
 - Put non-committed notes, handoff files, and throwaway scripts in `.context/`.
+
+## Local Fork Customizations
+
+This is a fork of [YishenTu/claudian](https://github.com/YishenTu/claudian). The following changes are local to this fork and should be preserved when merging upstream updates:
+
+| File | Change | Reason |
+|------|--------|--------|
+| `src/shared/icons.ts` | `MIMOCODE_PROVIDER_ICON` uses a dedicated M-letter composite icon instead of aliasing `OPENCODE_PROVIDER_ICON` | MiMoCode branding — distinct identity from OpenCode |
+
+When merging upstream, check that `MIMOCODE_PROVIDER_ICON` is not reverted to `OPENCODE_PROVIDER_ICON`.
