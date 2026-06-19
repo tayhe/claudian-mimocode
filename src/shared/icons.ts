@@ -96,7 +96,34 @@ export const OPENCODE_PROVIDER_ICON: ProviderIconSvg = {
   ],
 };
 
-export const MIMOCODE_PROVIDER_ICON: ProviderIconSvg = OPENCODE_PROVIDER_ICON;
+export const MIMOCODE_PROVIDER_ICON: ProviderIconSvg = {
+  kind: 'composite',
+  viewBox: '0 0 300 300',
+  children: [
+    {
+      tag: 'g',
+      attributes: {
+        class: 'claudian-provider-icon-variant claudian-provider-icon-variant--light',
+        transform: 'translate(0 0)',
+      },
+      children: [
+        { tag: 'path', attributes: { d: 'M30 260V40l120 130L270 40v220h-50V110L150 210 80 110v150z', fill: '#211E1E' } },
+        { tag: 'path', attributes: { d: 'M134 230h32a4 4 0 014 4v22a4 4 0 01-4 4h-32a4 4 0 01-4-4v-22a4 4 0 014-4z', fill: '#CFCECD' } },
+      ],
+    },
+    {
+      tag: 'g',
+      attributes: {
+        class: 'claudian-provider-icon-variant claudian-provider-icon-variant--dark',
+        transform: 'translate(0 0)',
+      },
+      children: [
+        { tag: 'path', attributes: { d: 'M30 260V40l120 130L270 40v220h-50V110L150 210 80 110v150z', fill: '#F1ECEC' } },
+        { tag: 'path', attributes: { d: 'M134 230h32a4 4 0 014 4v22a4 4 0 01-4 4h-32a4 4 0 01-4-4v-22a4 4 0 014-4z', fill: '#4B4646' } },
+      ],
+    },
+  ],
+};
 
 export const PI_PROVIDER_ICON: ProviderIconSvg = {
   kind: 'composite',
